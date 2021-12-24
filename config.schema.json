@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
+  "pluginAlias": "HomebridgeConnectorBridgePlugin",
   "pluginType": "platform",
   "singular": true,
   "schema": {
@@ -10,6 +10,28 @@
         "type": "string",
         "required": true,
         "default": "Example Dynamic Platform"
+      },
+      "accessToken": {
+        "title": "AccessToken",
+        "type": "string",
+        "required": true,
+        "default": "AccessToken"
+      },
+      "host": {
+        "title": "Host",
+        "type": "string",
+        "required": true
+      },
+      "port": {
+        "title": "Port",
+        "type": "number",
+        "required": true
+      },
+      "refreshInterval": {
+        "title": "Refresh interval",
+        "type": "number",
+        "required": true,
+        "default": 5000
       }
     }
   }
