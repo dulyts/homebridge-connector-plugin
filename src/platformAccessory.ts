@@ -78,13 +78,13 @@ export class ExamplePlatformAccessory {
                 this.state.position = 100 - resp.data.currentPosition;
                 switch (resp.data.operation) {
                     case 0:
-                        this.platform.Characteristic.PositionState.DECREASING;
+                        this.state.state = this.platform.Characteristic.PositionState.DECREASING;
                         break;
                     case 1:
-                        this.platform.Characteristic.PositionState.INCREASING;
+                        this.state.state = this.platform.Characteristic.PositionState.INCREASING;
                         break;
                     case 2:
-                        this.platform.Characteristic.PositionState.STOPPED;
+                        this.state.state = this.platform.Characteristic.PositionState.STOPPED;
                         break;
                     default:
                         break;
